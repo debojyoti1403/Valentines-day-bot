@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 24.8.1.2 (Linux)"/>
+	<meta name="created" content="00:00:00"/>
+	<meta name="changed" content="00:00:00"/>
+	<style type="text/css">
+		@page { size: 8.27in 11.69in; margin: 0.79in }
+		p { line-height: 115%; margin-bottom: 0.1in; background: transparent }
+		pre { background: transparent }
+		pre.western { font-family: "Liberation Mono", monospace; font-size: 10pt }
+		pre.cjk { font-family: "NSimSun", monospace; font-size: 10pt }
+		pre.ctl { font-family: "Liberation Mono", monospace; font-size: 10pt }
+	</style>
+</head>
+<body lang="en-US" link="#000080" vlink="#800000" dir="ltr"><pre class="western">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;title&gt;Arpita, Important Question 👀&lt;/title&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+  &lt;style&gt;
+    body {
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(135deg, #ff758c, #ff7eb3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Segoe UI', sans-serif;
+      overflow: hidden;
+    }
+
+    .card {
+      background: white;
+      padding: 36px 26px;
+      border-radius: 22px;
+      text-align: center;
+      box-shadow: 0 25px 45px rgba(0,0,0,0.2);
+      max-width: 340px;
+      width: 92%;
+      z-index: 2;
+    }
+
+    h1 {
+      margin-bottom: 26px;
+      color: #333;
+      font-size: 22px;
+    }
+
+    .buttons {
+      position: relative;
+      height: 140px;
+    }
+
+    button {
+      padding: 12px 28px;
+      font-size: 16px;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: all 0.25s ease;
+      white-space: nowrap;
+    }
+
+    #yes {
+      background: #ff4d6d;
+      color: white;
+    }
+
+    #no {
+      background: #f0f0f0;
+      color: #444;
+      position: absolute;
+      left: 150px;
+      top: 0;
+    }
+
+    .message {
+      display: none;
+      font-size: 18px;
+      color: #ff4d6d;
+      margin-top: 22px;
+      line-height: 1.5;
+    }
+
+    .heart {
+      position: fixed;
+      font-size: 18px;
+      animation: float 2.5s linear forwards;
+      pointer-events: none;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-250px) scale(1.8);
+        opacity: 0;
+      }
+    }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+  &lt;div class=&quot;card&quot;&gt;
+    &lt;h1&gt;Arpita, will you be my Valentine? 💌&lt;/h1&gt;
+
+    &lt;div class=&quot;buttons&quot;&gt;
+      &lt;button id=&quot;yes&quot;&gt;Yes 💖&lt;/button&gt;
+      &lt;button id=&quot;no&quot;&gt;No 🙄&lt;/button&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;message&quot; id=&quot;message&quot;&gt;
+      Knew it 😌❤️  
+      &lt;br&gt;&lt;br&gt;
+      You really thought “No” was an option?  
+      &lt;br&gt;&lt;br&gt;
+      Congratulations Arpita,  
+      you’ve officially been locked in 🔒💘
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;script&gt;
+    const noBtn = document.getElementById(&quot;no&quot;);
+    const yesBtn = document.getElementById(&quot;yes&quot;);
+    const message = document.getElementById(&quot;message&quot;);
+    const buttons = document.querySelector(&quot;.buttons&quot;);
+
+    noBtn.addEventListener(&quot;mouseover&quot;, () =&gt; {
+      const x = Math.random() * 220 - 110;
+      const y = Math.random() * 100 - 50;
+      noBtn.style.transform = `translate(${x}px, ${y}px)`;
+    });
+
+    noBtn.addEventListener(&quot;click&quot;, () =&gt; {
+      noBtn.innerText = &quot;Nice try 😏&quot;;
+    });
+
+    yesBtn.addEventListener(&quot;click&quot;, () =&gt; {
+      buttons.style.display = &quot;none&quot;;
+      message.style.display = &quot;block&quot;;
+      launchHearts();
+    });
+
+    function launchHearts() {
+      for (let i = 0; i &lt; 40; i++) {
+        const heart = document.createElement(&quot;div&quot;);
+        heart.className = &quot;heart&quot;;
+        heart.innerText = &quot;💖&quot;;
+        heart.style.left = Math.random() * 100 + &quot;vw&quot;;
+        heart.style.bottom = &quot;0px&quot;;
+        heart.style.animationDuration = (Math.random() * 1.5 + 2) + &quot;s&quot;;
+        document.body.appendChild(heart);
+
+        setTimeout(() =&gt; {
+          heart.remove();
+        }, 3000);
+      }
+    }
+  &lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+</body>
+</html>
